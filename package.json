@@ -41,7 +41,7 @@
     "bono": "^0.3.2",
     "koa-static": "^4.0.1",
     "twlv-channel-socketio": "^1.2.3",
-    "twlv-channel-webrtc": "^1.0.1",
-    "twlv-swarm": "^1.2.3"
+    "twlv-channel-webrtc": "^1.0.2",
+    "twlv-swarm": "^1.2.4"
   }
 }
