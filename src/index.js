@@ -13,7 +13,7 @@ import './components/app-main';
 
     swarm.addDiscovery(new PeerLookup());
     swarm.addChannel(new Socketio({ listening: false }));
-    swarm.addChannel(new Webrtc());
+    // swarm.addChannel(new Webrtc());
 
     let app = new Send();
     window.app = app;

@@ -9,7 +9,7 @@ class AppSessions extends Component {
     return Object.assign({}, super.props, {
       connectTo: {
         type: String,
-        value: 'socketio://localhost:8080',
+        value: '',
       },
 
       sessions: {
@@ -23,12 +23,14 @@ class AppSessions extends Component {
     return html;
   }
 
-  created () {
+  async created () {
     super.created();
 
     let onSessionUpdate = this._onSessionUpdate.bind(this);
     window.swarm.on('connect', onSessionUpdate);
     window.swarm.on('disconnect', onSessionUpdate);
+
+    await window.swarm.connect(`socketio://${window.location.host}`);
   }
 
   async checkAndConnect (evt) {
