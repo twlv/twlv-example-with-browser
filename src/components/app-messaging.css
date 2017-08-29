@@ -1,0 +1,51 @@
+app-messaging {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+app-messaging h3 {
+  margin: 0;
+  padding: 5px;
+  background-color: #cc0;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+app-messaging .app-messaging__main {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+app-messaging form {
+  display: flex;
+}
+
+app-messaging input {
+  display: block;
+  box-sizing: border-box;
+  font-size: .7em;
+}
+
+app-messaging input.address-field {
+  width: 150px;
+}
+
+app-messaging input.message-field {
+  flex: 1;
+}
+
+app-messaging .list {
+  flex: 1;
+  padding: 10px;
+  overflow: auto;
+}
+
+app-messaging .list .empty {
+  text-align: center;
+  font-style: italic;
+}

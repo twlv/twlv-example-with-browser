@@ -1,0 +1,17 @@
+app-advertisement dl {
+  background: #ff0;
+  padding: 0;
+  margin: 0;
+}
+
+app-advertisement dt {
+  background: #cc0;
+  padding: 5px;
+  margin: 0;
+}
+
+app-advertisement dd {
+  padding: 5px;
+  margin: 0;
+  overflow: auto;
+}

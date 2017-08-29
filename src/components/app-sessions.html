@@ -1,0 +1,22 @@
+<h3>Sessions</h3>
+
+<div class="app-session__main">
+  <form (submit)="checkAndConnect(evt)">
+    <input id="connectTo" type="text" placeholder="Connect to ..." value="{{connectTo}}">
+  </form>
+
+  <div class="list">
+    <div class="empty" hidden="[[sessions.length]]">
+      No sessions
+    </div>
+
+    <xin-for items="[[sessions]]" as="session">
+      <template>
+        <div class="row">
+          <a href="#" (click)="disconnect(evt, session)">(x)</a>
+          <span>[[session.peer.address]]</span>
+        </div>
+      </template>
+    </xin-for>
+  </div>
+</div>

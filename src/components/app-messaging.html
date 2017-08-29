@@ -1,0 +1,24 @@
+<h3>Messaging</h3>
+
+<div class="app-messaging__main">
+  <div class="list">
+    <div class="empty" hidden="[[messages.length]]">
+      No messages
+    </div>
+
+    <xin-for items="[[messages]]" as="message">
+      <template>
+        <div class="row">
+          <span>[[message.address]]</span> |
+          <span>[[message.value]]</span>
+        </div>
+      </template>
+    </xin-for>
+  </div>
+
+  <form (submit)="doSend(evt)">
+    <input class="address-field" type="text" placeholder="To (address)" value="{{message.address}}">
+    <input class="message-field" type="text" placeholder="Message ..." value="{{message.value}}">
+    <input type="submit">
+  </form>
+</div>

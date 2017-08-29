@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/index",
-    "dev": "webpack-dev-server"
+    "start": "node server/index",
+    "dev": "webpack-dev-server",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "^0.28.5",
     "eslint": "^4.5.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-xinix": "^1.0.4",
@@ -21,15 +23,20 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.5.0",
     "sinon": "^3.2.1",
+    "style-loader": "^0.18.2",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
-    "twlv-channel-socketio": "^1.2.1",
+    "@xinix/xin": "^2.4.1",
+    "bono": "^0.3.2",
+    "koa-static": "^4.0.1",
+    "twlv-channel-socketio": "^1.2.2",
     "twlv-channel-webrtc": "^1.0.0",
     "twlv-swarm": "^1.2.2"
   }

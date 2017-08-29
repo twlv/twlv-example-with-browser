@@ -1,0 +1,25 @@
+app-sessions h3 {
+  margin: 0;
+  padding: 5px;
+  background-color: #cc0;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+app-sessions .app-session__main {
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+app-sessions input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+app-sessions .list .empty {
+  text-align: center;
+  font-style: italic;
+}
