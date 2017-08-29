@@ -1,15 +1,19 @@
 {
   "name": "twlv-with-browser",
   "version": "1.0.0",
-  "description": "",
+  "description": "POC twlv with browser webrtc and socketio",
   "main": "index.js",
   "scripts": {
     "start": "node server/index",
     "dev": "webpack-dev-server",
     "build": "webpack"
   },
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": "8.2.1",
+    "npm": "5.3.0"
+  },
+  "author": "Ganesha <reekoheek@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -30,14 +34,14 @@
     "sinon": "^3.2.1",
     "style-loader": "^0.18.2",
     "webpack": "^3.5.5",
-    "webpack-dev-server": "^2.7.1"
+    "webpack-dev-server": "^2.7.1",
+    "@xinix/xin": "^2.4.1"
   },
   "dependencies": {
-    "@xinix/xin": "^2.4.1",
     "bono": "^0.3.2",
     "koa-static": "^4.0.1",
-    "twlv-channel-socketio": "^1.2.2",
-    "twlv-channel-webrtc": "^1.0.0",
-    "twlv-swarm": "^1.2.2"
+    "twlv-channel-socketio": "^1.2.3",
+    "twlv-channel-webrtc": "^1.0.1",
+    "twlv-swarm": "^1.2.3"
   }
 }
